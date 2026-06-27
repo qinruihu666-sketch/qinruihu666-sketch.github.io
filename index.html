@@ -1,46 +1,209 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Qinrui Hu Portfolio</title>
+    <title>Qinrui Hu | Data Analytics Portfolio</title>
+
     <style>
         body{
-            font-family: Arial;
-            max-width:900px;
-            margin:50px auto;
+            font-family: Arial, sans-serif;
+            max-width:1000px;
+            margin:40px auto;
             padding:20px;
-            background:#f5f5f5;
+            background:#f4f5f7;
+            color:#222;
+            line-height:1.7;
         }
+
         .card{
             background:white;
             padding:30px;
+            margin-bottom:25px;
             border-radius:12px;
-            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            box-shadow:0 2px 12px rgba(0,0,0,0.08);
         }
+
         h1{
-            color:#222;
+            margin-bottom:5px;
+        }
+
+        h2{
+            border-bottom:2px solid #eee;
+            padding-bottom:8px;
+        }
+
+        .tag{
+            display:inline-block;
+            background:#eef2ff;
+            padding:6px 12px;
+            border-radius:8px;
+            margin:4px;
+            font-size:14px;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        .highlight{
+            background:#f8fafc;
+            padding:18px;
+            border-left:4px solid #2563eb;
+            margin-top:15px;
         }
     </style>
 </head>
 
 <body>
-    <div class="card">
-        <h1>Hi, I'm Qinrui Hu</h1>
 
-        <p>
-            Columbia University Graduate Student
-        </p>
+<div class="card">
 
-        <p>
-            Aspiring Data Analyst & Future Data Mining Engineer
-        </p>
+    <h1>Qinrui Hu</h1>
 
-        <h2>Projects</h2>
+    <p>
+        <strong>Data Analytics Portfolio</strong>
+    </p>
 
-        <ul>
-            <li>L1 Print Website Traffic Analysis Dashboard</li>
-            <li>GA4 Conversion Tracking Audit</li>
-            <li>Marketing Funnel Analysis</li>
-        </ul>
+    <p>
+        Columbia University graduate student specializing in statistics,
+        business analytics, marketing analytics and data quality auditing.
+    </p>
+
+    <div>
+        <span class="tag">GA4</span>
+        <span class="tag">Looker Studio</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Marketing Analytics</span>
+        <span class="tag">Business Intelligence</span>
     </div>
+
+</div>
+
+
+<div class="card">
+
+    <h2>
+        Project 1
+        <br>
+        L1 Print: Marketing Analytics Dashboard & GA4 Conversion Audit
+    </h2>
+
+    <h3>Project Overview</h3>
+
+    <p>
+        Conducted a marketing performance analysis and GA4 conversion audit
+        for a B2B custom printing company using Google Analytics 4 and Looker Studio.
+    </p>
+
+    <p>
+        The project focused on evaluating traffic acquisition performance,
+        conversion funnel effectiveness,
+        and the accuracy of lead tracking implementation.
+    </p>
+
+
+    <h3>Tools Used</h3>
+
+    <ul>
+        <li>Google Analytics 4 (GA4)</li>
+        <li>Looker Studio</li>
+        <li>Excel</li>
+    </ul>
+
+
+    <h3>Key Findings</h3>
+
+    <ul>
+        <li>
+            Paid Search generated approximately 55% of total website traffic,
+            but showed the weakest engagement quality.
+        </li>
+
+        <li>
+            Organic Search and Referral traffic demonstrated stronger user engagement
+            and higher interaction quality.
+        </li>
+
+        <li>
+            The tracked end-to-end conversion rate was only 9.7%.
+        </li>
+
+        <li>
+            The current GA4 implementation appeared to significantly overestimate
+            business lead generation performance.
+        </li>
+    </ul>
+
+
+    <h3>GA4 Tracking Audit Results</h3>
+
+    <ul>
+        <li>52 form_start events originated from Login pages.</li>
+
+        <li>25 form_start events originated from Signup pages.</li>
+
+        <li>Only 15 form_start events originated from business Request Quote pages.</li>
+
+        <li>
+            Non-business user activities were being recorded as business conversions.
+        </li>
+    </ul>
+
+
+    <h3>Recommendations</h3>
+
+    <ul>
+        <li>
+            Restrict conversion tracking to business lead forms only.
+        </li>
+
+        <li>
+            Exclude authentication and account management events.
+        </li>
+
+        <li>
+            Implement dedicated conversion events:
+            <ul>
+                <li>request_quote_submit</li>
+                <li>custom_apparel_submit</li>
+                <li>designer_checkout_submit</li>
+            </ul>
+        </li>
+
+        <li>
+            Recalculate historical conversion benchmarks after implementation.
+        </li>
+    </ul>
+
+
+    <div class="highlight">
+
+        <strong>Business Impact</strong>
+
+        <p>
+            The current GA4 implementation may significantly overestimate
+            actual lead generation activity,
+            potentially resulting in inaccurate marketing ROI evaluation
+            and inefficient budget allocation decisions.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="card">
+
+    <h2>Contact</h2>
+
+    <p>
+        Email:
+        qinruihu666@gmail.com
+    </p>
+
+</div>
+
 </body>
+
 </html>
